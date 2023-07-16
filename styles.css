@@ -1,0 +1,170 @@
+
+:root {
+	--rotate-deg: -15deg; 
+	
+  }
+
+body{
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgb(40, 39, 37);
+	color: rgba(255, 255, 255, 0.937);
+}
+.interaction{
+	border: 3px solid #1c1a1a;
+	background-color: #763bed;
+	color: rgb(252, 254, 255);
+	border-radius: 15%;
+	padding: 0.5rem;
+	transition: all 0.25s;
+	letter-spacing: 1.3px;
+	display: inline-flex;
+	text-shadow:	
+    -.3px -.3px 0 #121212,  
+    .3px -.3px 0 #0b0a0a,
+    -.3px .3px 0 #0c0b0b,
+    .3px .3px 0 #181717;
+}
+
+select{
+	background-color: #8851f8;
+	color: #FFF;
+	margin-left: 0.24rem;
+ 
+}
+
+.interaction:hover{
+	transform: scale(1.1);
+	background-color: #8952f8;
+
+
+}
+
+.interaction:active{
+	transform: translateY(.25rem);
+	transform: translateX(.25rem);
+	border: 1px solid #1c1a1a;
+	background-color: #6328d9;
+	color: rgb(252, 254, 255);
+
+
+}
+.container{
+	margin-left:2rem;
+	display: block;
+	margin-left:2rem;
+	flex: 1;
+	min-width: 600px; /* Ancho mínimo del primer div */
+	flex: 1;
+}
+.grid {
+	flex: 1;
+	min-width: 610px;
+	min-height: 610px;
+	width: 610px;
+	height: 610px;
+	display: flex;
+	flex-wrap: wrap;
+ 	background-image: url("simpsons-family.jpg");  
+	background-size: cover;
+	border: 3px solid #1c1a1a;
+	border-radius: 1%;
+	transition: all 0.3s;
+}
+.scenario1 {
+
+	background-image: url("springfiled.jpg");
+}
+
+.scenario2 {
+ 
+		background-image: url("inHouse.jpg");
+}
+
+.scenario3 {
+	background-image: url("simpsos-characters.jpg");
+	
+}
+.title{
+	color: #d3d004;
+	letter-spacing: -2%;
+	font-size: 4rem;
+	text-shadow:	
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -5px 5px 0 #000,
+    2px 2px 0 #000;
+
+}
+.score{
+	display: flex;
+	align-items: left;
+	justify-content: space-around;
+}
+.subtitle{
+	color: #d3d004;
+	letter-spacing: -2%;
+	font-size: 2rem;
+	text-shadow:	
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+.square {
+	height: 100px;
+	width: 100px;
+	opacity: 0.5 ;
+	transition: opacity 0.5s;
+	 
+}
+
+.maggie {
+	background-image: url("maggie.png");
+	background-size: cover;
+	transform: rotate( var(--rotate-deg));
+	opacity: 1;
+}
+
+.maggie:active {
+	background-image: linear-gradient(rgba(218, 91, 88, 0.5), rgba(245, 200, 93, 0.5)),url("maggie.png");
+	transform: rotate( var(--rotate-deg));
+	border-radius: 50%;
+	
+}
+.bobo{
+	background-image: url("bobo.png");
+	background-size: cover;
+	opacity: 1;
+}
+.girl{
+	background-image: url("girl.png");
+	background-size: cover;
+	opacity: 1;
+}
+.bear{
+	background-image: url("bear.png");
+	background-size: cover;
+	opacity: 1;
+}
+.monkey{
+	background-image: url("monkey.png");
+	background-size: cover;
+	opacity: 1;
+}
+
+
+@media screen and (max-width: 600px) { /* Ancho de pantalla específico */
+	.container {
+	  flex-basis: 100%; /* El primer div ocupa todo el ancho de pantalla */
+	  margin-left:0.2rem;
+	}
+	
+	.grid {
+	  order: 1; /* El segundo div se muestra debajo */
+	}
+  }
