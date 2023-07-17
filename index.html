@@ -1,12 +1,14 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Click On Maggie!</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="maggie.png" />
 </head>
+
 <body>
   <div class="container">
     <h1 class="title">Welcome to the Simpsons Game!</h1>
@@ -14,28 +16,32 @@
     <button class="interaction" id="start">Start</button>
     <button class="interaction">Reset</button>
     <form id="difficult" class="interaction">Difficult<select>
-      <option value="Easy">Easy</option>
-      <option value="Medium">Medium</option>
-      <option value="Hard">Hard</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
 
-    </select></form>
-    <form  class="interaction">Scenario
+      </select></form>
+    <form class="interaction">Scenario
       <select id="scenario">
-      <option value="Easy">Easy</option>
-      <option value="Medium">Medium</option>
-      <option value="Hard">Hard</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
 
-    </select></form>
-    <div class="container">
-<div class="score">
-  <h2 class="subtitle">Your score: </h2>
-  <h2 id="score">0</h2>
-</div>
-<div class="score">
-  <h2 class="subtitle">Time Left:</h2>
-  <h2 id="time-left">10</h2>
-</div></div>
-</div>
+      </select>
+    </form>
+
+    <div class="container2">
+      <div class="score">
+        <h2 class="subtitle">Your score: </h2>
+        <h2 id="score">0</h2>
+      </div>
+      <div class="score">
+        <h2 class="subtitle">Time Left:</h2>
+        <h2 id="time-left">10</h2>
+      </div>
+    </div>
+  </div>
+
   <div class="grid">
     <div class="square" id="1"></div>
     <div class="square" id="2"></div>
@@ -66,15 +72,17 @@
     <div class="square" id="27"></div>
     <div class="square" id="28"></div>
     <div class="square" id="29"></div>
+    <div class="square" id="30"></div>
     <div class="square" id="31"></div>
     <div class="square" id="32"></div>
     <div class="square" id="33"></div>
     <div class="square" id="34"></div>
     <div class="square" id="35"></div>
     <div class="square" id="36"></div>
-  
+
   </div>
 
   <script src="app.js"></script>
 </body>
+
 </html>

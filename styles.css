@@ -7,12 +7,14 @@
 
 body{
 	padding: 5px;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 	background-color: rgb(40, 39, 37);
 	color: rgba(255, 255, 255, 0.937);
+	
 }
 
 
@@ -60,9 +62,16 @@ select{
 	margin-left:2rem;
 	display: block;
 	margin-left:2rem;
-	flex: 1;
+ 
 	min-width: 600px; /* Ancho mínimo del primer div */
-	flex: 1;
+ 
+}
+.container2{
+ 
+	display: block;
+ 
+ 
+ 
 }
 .grid {
 	flex: 1;
@@ -173,13 +182,17 @@ select{
 	opacity: 1;
 }
 
- 
- 
-  @media (min-width:600px) { /* Ancho de pantalla específico */
-	.container {
+
+.container {
 	  flex-basis: 100%;  
 	  margin-left:0.2rem;
 	}
+ .grid {
+	  order: 1; /* El segundo div se muestra debajo */
+	}
+ 
+  @media (min-width:600px) { /* Ancho de pantalla específico */
+	
 
 	.score{
 		display: flex;
@@ -188,16 +201,25 @@ select{
 	}
  
 	
-	.grid {
-	  order: 1; /* El segundo div se muestra debajo */
-	}
+	
 	.interaction{
 		border-radius: 10%;
 		padding: 0.25rem;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		 
  
+	}	
+	select{
+		 
+		font-size: 1.5rem;
+	 
 	}
+	#score,#time-left{
+ 
+		font-size: 1.5rem;
+		 
+	}
+
 	.title{
 		color: #d3d004;
 		letter-spacing: -2%;
@@ -205,18 +227,16 @@ select{
 	 
 	
 	}
-	#score,#time-left{
- 
-		font-size: 1.5rem;
-		 
-	}
+
 	
 	
   }
  
 
-  @media (min-width:758px) { /* Ancho de pantalla específico */
- 
+  @media (max-width:758px) { /* Ancho de pantalla específico */
+	body{
+		grid-template-columns: 100% ;
+	}
 	.score{
 		display: flex;
 		align-items: left;
@@ -228,7 +248,16 @@ select{
 	  font-size: 1.5rem;
 	 
 	}
-
+	select{
+		 
+		font-size: 1.5rem;
+	 
+	}
+	#score,#time-left{
+ 
+		font-size: 1.5rem;
+		 
+	}
 	.title{
 		color: #d3d004;
 		letter-spacing: -2%;
@@ -236,11 +265,7 @@ select{
 	 
 	
 	}
-	#score,#time-left{
- 
-		font-size: 1.5rem;
-		 
-	}
+
 	
 	
   }
