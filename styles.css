@@ -1,25 +1,56 @@
-
 :root {
-	--rotate-deg: -15deg; 
-	
-  }
- 
+	--rotate-deg: -15deg;
 
-body{
-	padding: 5px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
-	background-color: rgb(40, 39, 37);
-	color: rgba(255, 255, 255, 0.937);
-	
 }
 
 
-.interaction{
-	font-size: 3rem;
+body {
+	padding: 5px;
+	background-color: rgb(40, 39, 37);
+	color: rgba(255, 255, 255, 0.937);
+
+}
+
+.main-container {
+ 
+	display: grid;
+	grid-template-columns: 1fr 1fr  ;
+/* 	grid-gap: 2rem; */
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.container {
+	margin-left: 2rem;
+	/* 	display: flex; */
+	margin-left: 2rem;
+	grid-column: 1 / 2;
+ 
+
+}
+
+.grid {
+	/* 	flex: 1; */
+	min-width: 610px;
+	min-height: 610px;
+	width: 610px;
+	height: 610px;
+
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url("simpsons-family.jpg");
+	background-size: cover;
+	border: 3px solid #1c1a1a;
+	border-radius: 1%;
+	transition: all 0.3s;
+	grid-column: 2 / span 3;
+}
+
+
+.interaction {
+	font-size: 1.5rem;
 	border: 3px solid #1c1a1a;
 	background-color: #763bed;
 	color: rgb(252, 254, 255);
@@ -28,28 +59,29 @@ body{
 	transition: all 0.25s;
 	letter-spacing: 1.3px;
 	display: inline-flex;
-	text-shadow:	
-	-.3px -.3px 0 #121212,  
-	.3px -.3px 0 #0b0a0a,
-	-.3px .3px 0 #0c0b0b,
-	.3px .3px 0 #181717;
+	text-shadow:
+		-.3px -.3px 0 #121212,
+		.3px -.3px 0 #0b0a0a,
+		-.3px .3px 0 #0c0b0b,
+		.3px .3px 0 #181717;
 }
-select{
+
+select {
 	background-color: #8851f8;
 	color: #adacac;
 	margin-left: 0.24rem;
-	font-size: 2.5rem;
- 
+	font-size: 1.1rem;
+
 }
 
-.interaction:hover{
+.interaction:hover {
 	transform: scale(1.1);
 	background-color: #8952f8;
 
 
 }
 
-.interaction:active{
+.interaction:active {
 	transform: translateY(.25rem);
 	transform: translateX(.25rem);
 	border: 1px solid #1c1a1a;
@@ -58,140 +90,124 @@ select{
 
 
 }
-.container{
-	margin-left:2rem;
+
+.container2 {
+
 	display: block;
-	margin-left:2rem;
- 
-	min-width: 600px; /* Ancho mínimo del primer div */
- 
+
+
+
 }
-.container2{
- 
-	display: block;
- 
- 
- 
-}
-.grid {
-	flex: 1;
-	min-width: 610px;
-	min-height: 610px;
-	width: 610px;
-	height: 610px;
-	display: flex;
-	flex-wrap: wrap;
- 	background-image: url("simpsons-family.jpg");  
-	background-size: cover;
-	border: 3px solid #1c1a1a;
-	border-radius: 1%;
-	transition: all 0.3s;
-}
+
 .scenario1 {
 
 	background-image: url("springfiled.jpg");
 }
 
 .scenario2 {
- 
-		background-image: url("inHouse.jpg");
+
+	background-image: url("inHouse.jpg");
 }
 
 .scenario3 {
 	background-image: url("simpsos-characters.jpg");
-	
-}
-.title{
-	color: #d3d004;
-	letter-spacing: -2%;
-	font-size: 4rem;
-	text-shadow:	
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -5px 5px 0 #000,
-    2px 2px 0 #000;
 
 }
-.score{
+
+.title {
+	color: #d3d004;
+	letter-spacing: -2%;
+	font-size: 4.5rem;
+	text-shadow:
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-5px 5px 0 #000,
+		2px 2px 0 #000;
+
+}
+
+.score {
 	display: inline-flex;
 	flex-wrap: wrap;
 	align-items: left;
 	justify-content: space-around;
 }
-.score h2{
+
+.score h2 {
 	display: inline-flex;
 	align-items: left;
 	justify-content: space-around;
 }
-.subtitle{
+
+.subtitle {
 	color: #d3d004;
 	letter-spacing: -2%;
 	font-size: 2rem;
-	text-shadow:	
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 
 }
 
-#score,#time-left{
+#score,
+#time-left {
 	letter-spacing: -2%;
 	font-size: 2rem;
-	 
+
 }
+
 .square {
 	height: 100px;
 	width: 100px;
-	opacity: 0.5 ;
+	opacity: 0.5;
 	transition: opacity 0.5s;
-	 
+
 }
 
 .maggie {
 	background-image: url("maggie.png");
 	background-size: cover;
-	transform: rotate( var(--rotate-deg));
+	transform: rotate(var(--rotate-deg));
 	opacity: 1;
 }
 
 .maggie:active {
-	background-image: linear-gradient(rgba(218, 91, 88, 0.5), rgba(245, 200, 93, 0.5)),url("maggie.png");
-	transform: rotate( var(--rotate-deg));
+	background-image: linear-gradient(rgba(218, 91, 88, 0.5), rgba(245, 200, 93, 0.5)), url("maggie.png");
+	transform: rotate(var(--rotate-deg));
 	border-radius: 50%;
-	
+
 }
-.bobo{
+
+.bobo {
 	background-image: url("bobo.png");
 	background-size: cover;
 	opacity: 1;
 }
-.girl{
+
+.girl {
 	background-image: url("girl.png");
 	background-size: cover;
 	opacity: 1;
 }
-.bear{
+
+.bear {
 	background-image: url("bear.png");
 	background-size: cover;
 	opacity: 1;
 }
-.monkey{
+
+.monkey {
 	background-image: url("monkey.png");
 	background-size: cover;
 	opacity: 1;
 }
 
 
-.container {
-	  flex-basis: 100%;  
-	  margin-left:0.2rem;
-	}
- .grid {
-	  order: 1; /* El segundo div se muestra debajo */
-	}
- 
-  @media (min-width:600px) { /* Ancho de pantalla específico */
+
+
+/*  @media (min-width:600px) {  
 	.score{
 		display: flex;
 		align-items: left;
@@ -216,33 +232,51 @@ select{
 		font-size: 2.5rem;
 	}
   }
- 
+  */
 
-  @media (max-width:808px) { /* Ancho de pantalla específico */
-	body{
-		grid-template-columns: 100% ;
+@media (max-width:808px) {
+
+	body {
+		padding: 2px;
 	}
-	.score{
-		display: flex;
+
+	.main-container {
+		grid-gap: 0.5rem;
+		grid-template-columns: 1fr 1fr ;
+	}
+
+	.container {
+		grid-column: 1 / span 2;
+		 
+	}
+
+	.grid {
+		grid-column: 1 / span 3;
+	}
+
+	.score {
+		display: inline-flex;
 		align-items: left;
 		justify-content: space-around;
 	}
- 
-	.interaction{
-	  font-size: 1.5rem;
-	 
+
+	.interaction {
+		font-size: 1.5rem;
+
 	}
-	select{ 
+
+	select {
 		font-size: 1.5rem;
 	}
-	#score,#time-left{
+
+	#score,
+	#time-left {
 		font-size: 1.5rem;
 	}
-	.title{
+
+	.title {
 		color: #d3d004;
 		letter-spacing: -2%;
 		font-size: 2.5rem;
 	}
-  }
- 
- 
+}
