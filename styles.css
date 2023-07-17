@@ -192,48 +192,33 @@ select{
 	}
  
   @media (min-width:600px) { /* Ancho de pantalla específico */
-	
-
 	.score{
 		display: flex;
 		align-items: left;
 		justify-content: space-around;
 	}
- 
-	
-	
 	.interaction{
 		border-radius: 10%;
 		padding: 0.25rem;
 		font-size: 1.5rem;
-		 
- 
 	}	
-	select{
-		 
-		font-size: 1.5rem;
-	 
+	select{	 
+	font-size: 1.5rem;
+
 	}
 	#score,#time-left{
- 
-		font-size: 1.5rem;
-		 
+		font-size: 1.5rem;	 
 	}
 
 	.title{
 		color: #d3d004;
 		letter-spacing: -2%;
 		font-size: 2.5rem;
-	 
-	
 	}
-
-	
-	
   }
  
 
-  @media (max-width:758px) { /* Ancho de pantalla específico */
+  @media (max-width:808px) { /* Ancho de pantalla específico */
 	body{
 		grid-template-columns: 100% ;
 	}
@@ -243,31 +228,21 @@ select{
 		justify-content: space-around;
 	}
  
- 
 	.interaction{
 	  font-size: 1.5rem;
 	 
 	}
-	select{
-		 
+	select{ 
 		font-size: 1.5rem;
-	 
 	}
 	#score,#time-left{
- 
 		font-size: 1.5rem;
-		 
 	}
 	.title{
 		color: #d3d004;
 		letter-spacing: -2%;
 		font-size: 2.5rem;
-	 
-	
 	}
-
-	
-	
   }
  
  
