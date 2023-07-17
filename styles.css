@@ -1,5 +1,7 @@
 :root {
 	--rotate-deg: -15deg;
+	--font-large: 2rem;
+	--font-small:1rem;
 
 }
 
@@ -142,7 +144,7 @@ select {
 .subtitle {
 	color: #d3d004;
 	letter-spacing: -2%;
-	font-size: 2rem;
+	font-size: var(--font-large);
 	text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -154,7 +156,7 @@ select {
 #score,
 #time-left {
 	letter-spacing: -2%;
-	font-size: 2rem;
+	font-size: var(--font-large);;
 
 }
 
@@ -243,12 +245,18 @@ select {
 	.main-container {
 		grid-gap: 0.5rem;
 		grid-template-columns: 1fr 1fr ;
+		display: flex;
 	}
 
 	.container {
 		grid-column: 1 / span 2;
-		 
+		 margin-left: 0.25rem;
+		 align-items: center;
+		 justify-content: center;
 	}
+	
+	
+
 
 	.grid {
 		grid-column: 1 / span 3;
@@ -258,20 +266,22 @@ select {
 		display: inline-flex;
 		align-items: left;
 		justify-content: space-around;
+		margin-top:-0.5rem;
+		margin-bottom:-0.5rem;
 	}
 
 	.interaction {
-		font-size: 1.5rem;
+		font-size:  var(--font-small);
 
 	}
 
 	select {
-		font-size: 1.5rem;
+		font-size: var(--font-small);
 	}
 
 	#score,
 	#time-left {
-		font-size: 1.5rem;
+		font-size: var(--font-small);
 	}
 
 	.title {
