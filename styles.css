@@ -34,8 +34,9 @@ body{
 }
 select{
 	background-color: #8851f8;
-	color: #FFF;
+	color: #adacac;
 	margin-left: 0.24rem;
+	font-size: 2.5rem;
  
 }
 
@@ -124,6 +125,12 @@ select{
     1px 1px 0 #000;
 
 }
+
+#score,#time-left{
+	letter-spacing: -2%;
+	font-size: 2rem;
+	text-shadow:	
+}
 .square {
 	height: 100px;
 	width: 100px;
@@ -168,7 +175,7 @@ select{
 
  
  
-  @media screen and (min-width:600px) { /* Ancho de pantalla específico */
+  @media (min-width:600px) { /* Ancho de pantalla específico */
 	.container {
 	  flex-basis: 100%;  
 	  margin-left:0.2rem;
