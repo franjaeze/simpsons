@@ -3,6 +3,7 @@
 	--rotate-deg: -15deg; 
 	
   }
+ 
 
 body{
 	padding: 5px;
@@ -13,7 +14,10 @@ body{
 	background-color: rgb(40, 39, 37);
 	color: rgba(255, 255, 255, 0.937);
 }
+
+
 .interaction{
+	font-size: 3rem;
 	border: 3px solid #1c1a1a;
 	background-color: #763bed;
 	color: rgb(252, 254, 255);
@@ -23,12 +27,11 @@ body{
 	letter-spacing: 1.3px;
 	display: inline-flex;
 	text-shadow:	
-    -.3px -.3px 0 #121212,  
-    .3px -.3px 0 #0b0a0a,
-    -.3px .3px 0 #0c0b0b,
-    .3px .3px 0 #181717;
+	-.3px -.3px 0 #121212,  
+	.3px -.3px 0 #0b0a0a,
+	-.3px .3px 0 #0c0b0b,
+	.3px .3px 0 #181717;
 }
-
 select{
 	background-color: #8851f8;
 	color: #FFF;
@@ -100,7 +103,13 @@ select{
 
 }
 .score{
-	display: flex;
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: left;
+	justify-content: space-around;
+}
+.score h2{
+	display: inline-flex;
 	align-items: left;
 	justify-content: space-around;
 }
@@ -157,14 +166,41 @@ select{
 	opacity: 1;
 }
 
-
-@media screen and (max-width: 600px) { /* Ancho de pantalla específico */
+ 
+ 
+  @media screen and (min-width:600px) { /* Ancho de pantalla específico */
 	.container {
-	  flex-basis: 100%; /* El primer div ocupa todo el ancho de pantalla */
+	  flex-basis: 100%;  
 	  margin-left:0.2rem;
 	}
+
+	.score{
+		display: flex;
+		align-items: left;
+		justify-content: space-around;
+	}
+ 
 	
 	.grid {
 	  order: 1; /* El segundo div se muestra debajo */
 	}
+	.interaction{
+		border: 3px solid #1c1a1a;
+		background-color: #763bed;
+		color: rgb(252, 254, 255);
+		border-radius: 15%;
+		padding: 0.5rem;
+		transition: all 0.25s;
+		letter-spacing: 1.3px;
+		display: inline-flex;
+		text-shadow:	
+		-.3px -.3px 0 #121212,  
+		.3px -.3px 0 #0b0a0a,
+		-.3px .3px 0 #0c0b0b,
+		.3px .3px 0 #181717;
+	}
+	
+	
   }
+ 
+ 
