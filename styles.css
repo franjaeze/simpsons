@@ -129,7 +129,7 @@ select{
 #score,#time-left{
 	letter-spacing: -2%;
 	font-size: 2rem;
-	text-shadow:	
+	 
 }
 .square {
 	height: 100px;
@@ -192,19 +192,54 @@ select{
 	  order: 1; /* El segundo div se muestra debajo */
 	}
 	.interaction{
-		border: 3px solid #1c1a1a;
-		background-color: #763bed;
-		color: rgb(252, 254, 255);
-		border-radius: 15%;
-		padding: 0.5rem;
-		transition: all 0.25s;
-		letter-spacing: 1.3px;
-		display: inline-flex;
-		text-shadow:	
-		-.3px -.3px 0 #121212,  
-		.3px -.3px 0 #0b0a0a,
-		-.3px .3px 0 #0c0b0b,
-		.3px .3px 0 #181717;
+		border-radius: 10%;
+		padding: 0.25rem;
+		font-size: 2rem;
+		 
+ 
+	}
+	.title{
+		color: #d3d004;
+		letter-spacing: -2%;
+		font-size: 2.5rem;
+	 
+	
+	}
+	#score,#time-left{
+ 
+		font-size: 1.5rem;
+		 
+	}
+	
+	
+  }
+ 
+
+  @media (min-width:758px) { /* Ancho de pantalla específico */
+ 
+	.score{
+		display: flex;
+		align-items: left;
+		justify-content: space-around;
+	}
+ 
+ 
+	.interaction{
+	  font-size: 1.5rem;
+	 
+	}
+
+	.title{
+		color: #d3d004;
+		letter-spacing: -2%;
+		font-size: 2.5rem;
+	 
+	
+	}
+	#score,#time-left{
+ 
+		font-size: 1.5rem;
+		 
 	}
 	
 	
