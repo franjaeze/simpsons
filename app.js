@@ -4,6 +4,8 @@ const timeLeft = document.querySelector('#time-left')
 const score = document.querySelector('#score')
 const start = document.getElementById('start');
 const gameBoard = document.querySelector(".grid");
+const modal = document.getElementById('modal');
+const modalButton = document.getElementById('modal-button');
 
 let difficult = document.getElementById('difficult');
 let scenario = document.getElementById('scenario');
@@ -68,7 +70,10 @@ function countDown() {
  if (currentTime == 0) {
    clearInterval(countDownTimerId)
    clearInterval(timerId)
-   alert('GAME OVER! Your final score is ' + result)
+   modal.classList.add('show-modal')
+   d3.select("#modal").append("h1").text(   result); 
+   
+ 
  }
 
 }
@@ -101,7 +106,7 @@ const setDifficulty = () => {
  
 const play = () =>{
    result = 0
- currentTime = 10
+ currentTime = 10 
  timerId = null
 
  clearInterval(countDownTimerId)
@@ -112,5 +117,12 @@ setScenario();
 setDifficulty();
 }
 
+const hide = () => {
+  modal.classList.remove('show-modal')
+ modal.querySelector('h1').remove();
+}
+
 start.addEventListener( "click", play) 
+ modalButton.addEventListener("click",hide)
+
 
