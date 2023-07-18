@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body>  
   <div class="main-container"> 
   <div class="container">
     <h1 class="title">Welcome to the Simpsons Game!</h1>
@@ -44,7 +44,12 @@
     </div>
   </div>
 
-  <div class="grid">
+  <div id="modal" class="modal show-modal"><button id="modal-button">X</button>
+    <div class="container3"> <h1>Game Over</h1>
+    <div id="finalscore"><h2>Your final score is</h2><br></div></div>
+    </div>
+
+  <div class="grid"> 
     <div class="square" id="1"></div>
     <div class="square" id="2"></div>
     <div class="square" id="3"></div>
@@ -81,10 +86,11 @@
     <div class="square" id="34"></div>
     <div class="square" id="35"></div>
     <div class="square" id="36"></div>
-
+    
   </div>
 </div>
 
+<script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="app.js"></script>
 </body>
 

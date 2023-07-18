@@ -4,6 +4,59 @@
 	--font-small:1rem;
 
 }
+.modal{
+	position: absolute;
+	display: flex;
+	align-items: start;
+    justify-content: end;
+	width: 50%;
+	height: 25%;
+	color:rgb(40, 39, 37);
+	
+	   border-radius: 5px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: -1000;
+	visibility: hidden;
+
+}
+
+.modal h1{
+	/* margin: 1em; */
+
+}
+
+.show-modal{
+	z-index: 10;
+	background-color: #905cf85d;
+	color: rgb(252, 254, 255);
+	visibility: visible;
+
+}
+
+.modal button {
+	font-size: 1.0rem;
+	border: 3px solid #1c1a1a;
+	background-color: rgb(40, 39, 37);
+	color: rgb(252, 254, 255);
+	border-radius: 15%;
+	padding: 0.25rem;
+	transition: all 0.25s;
+	letter-spacing: 1.3px;
+	cursor:pointer;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 101;
+	text-shadow:
+		-.3px -.3px 0 #121212,
+		.3px -.3px 0 #0b0a0a,
+		-.3px .3px 0 #0c0b0b,
+		.3px .3px 0 #181717;
+}
 
 
 body {
@@ -29,8 +82,12 @@ body {
 	/* 	display: flex; */
 	margin-left: 2rem;
 	grid-column: 1 / 2;
- 
+}
 
+.container3{
+	display: flex;
+justify-content: center;
+    flex-direction: column;
 }
 
 .grid {
