@@ -71,7 +71,8 @@ function countDown() {
    clearInterval(countDownTimerId)
    clearInterval(timerId)
    modal.classList.add('show-modal')
-   d3.select("#modal").append("h1").text(   result); 
+ /*   d3.select("#modal").append().text(   result);  */
+    d3.select(".final-score").text(result);
    
  
  }
@@ -119,7 +120,7 @@ setDifficulty();
 
 const hide = () => {
   modal.classList.remove('show-modal')
- modal.querySelector('h1').remove();
+
 }
 
 start.addEventListener( "click", play) 
