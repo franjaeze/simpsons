@@ -1,8 +1,12 @@
 :root {
 	--rotate-deg: -15deg;
 	--font-large: 2rem;
-	--font-small: 1rem;
+	--font-small: 0.75rem;
 
+}
+
+html{
+	font-size: 20px;
 }
 
 .modal {
@@ -145,7 +149,7 @@ body {
 	border: 3px solid #1c1a1a;
 	background-color: #763bed;
 	color: rgb(252, 254, 255);
-	border-radius: 15%;
+	border-radius: 15px;
 	padding: 0.5rem;
 	transition: all 0.25s;
 	letter-spacing: 1.3px;
@@ -160,8 +164,9 @@ body {
 select {
 	background-color: #8851f8;
 	color: #adacac;
-	margin-left: 0.24rem;
-	font-size: 1.1rem;
+	margin-left: 0.20rem;
+	font-size: 1.0rem;
+	border-radius: 10px;
 
 }
 
@@ -331,6 +336,9 @@ select {
 	body {
 		padding: 2px;
 	}
+	.title{
+		margin: -.40rem 0;
+	}
 
 	.main-container {
 		grid-gap: 0.5rem;
@@ -344,8 +352,14 @@ select {
 		align-items: center;
 		justify-content: center;
 	}
+	.container h3 {
+		margin-bottom: .25rem;
+		
+	}.subtitle {
+ 
+		font-size: var(--font-small);
 
-
+	}
 
 
 	.grid {
@@ -362,6 +376,7 @@ select {
 
 	.interaction {
 		font-size: var(--font-small);
+		padding: 0.15rem 0.35rem;
 
 	}
 
@@ -372,11 +387,17 @@ select {
 	#score,
 	#time-left {
 		font-size: var(--font-small);
+		margin:0.5rem 1rem;
+	/* 	padding; */
 	}
 
 	.title {
 		color: #d3d004;
 		letter-spacing: -2%;
 		font-size: 2.5rem;
+	}
+
+	.modal{
+		margin-top: 50vh;
 	}
 }
